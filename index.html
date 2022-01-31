@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>A-Frame Project</title>
+	<script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  <script src="https://unpkg.com/aframe-event-set-component@4.2.1/dist/aframe-event-set-component.min.js"></script> 
+</head>
+<body>
+<a-scene>
+    <a-plane id = "plane1" rotation= "0 0 25" position= "-.79 3.6 -4.2" color="#11C3FE" height="5.6" width="15"
+           event-set__enter="_event: mouseenter; color: #F44336"
+           event-set__leave="_event: mouseleave; color: #11C3FE"></a-plane>
+    <a-plane id = "plane2" rotation = "0 0 25" position= "1 -.974 -4.2" color = "lightgreen" height="4.2" width= "15" 
+           event-set__enter="_event: mouseenter; color: #266280"
+           event-set__leave="_event: mouseleave; color: lightgreen"></a-plane>
+    <a-circle id = "circle1" rotation = "-1 -.47" position= ".4 1.08 -4" color = "red" height="1" width= "1" opacity = ".8" 
+           event-set__enter="_event: mouseenter; color: #8BC34A"
+           event-set__leave="_event: mouseleave; color: red"></a-circle>
+    <a-circle id = "circle2" rotation = "0 " position= ".4 1.08 -4" color = "rgb(243,255,0)" height="1" width= "1" opacity =".9"
+           event-set__enter="_event: mouseenter; color: #FF9800"
+           event-set__leave="_event: mouseleave; color: rgb(243,255,0)"></a-circle>
+    <a-circle id = "circle3" rotation = "0 " position= ".8 2.2 -3.9" color = "#885FD1" radius=".4"  opacity = ".8"
+           event-set__enter="_event: mouseenter; color: #8FF7FF"
+           event-set__leave="_event: mouseleave; color: #885FD1"></a-circle>
+    <a-circle id = "circle4" rotation = "0 " position= "2.9 2.25 -4" color = "#FC0101" radius=".4"  
+           event-set__enter="_event: mouseenter; color: rgb(100,252,100)"
+           event-set__leave="_event: mouseleave; color: #FC0101"></a-circle>
+    <a-circle id = "circle5" rotation = "-1 -.47" position= "2.9 2.25 -4" color = "#FFFFFF" radius=".4"  
+           event-set__enter="_event: mouseenter; color: #8FF7FF"
+           event-set__leave="_event: mouseleave; color: #FFFFFF"></a-circle>
+    <a-circle id = "circle6" rotation = "-1 -.47" position= "2.07 1.829 -4.1" color = "#FFFFFF" radius=".2"  
+           event-set__enter="_event: mouseenter; color: #8FF7FF"
+           event-set__leave="_event: mouseleave; color: #FFFFFF"></a-circle>
+    <a-circle id = "circle7" rotation = "1.2 .47" position= "2.042 1.827 -4.1" color = "rgb(0,0,0)" radius=".23"  
+           event-set__enter="_event: mouseenter; color: #4CAF50"
+           event-set__leave="_event: mouseleave; color: rgb(0,0,0)"></a-circle>
+    <a-ring id = "ring1" rotation = "0 0 25 " position= "2.016 1.834 -4" color = "rgb(255,192,203)" scale = ".25 .25 1" 
+           event-set__enter="_event: mouseenter; color: #FFEB3B"
+           event-set__leave="_event: mouseleave; color: rgb(255,192,203)"></a-ring>
+    <a-camera position="5 1.6 -5" ></a-camera>
+    <a-sky color="white"></a-sky>
+  <a-camera>
+    <a-cursor></a-cursor>
+  </a-camera>
+    </a-scene>
+  </body>
+</html>
